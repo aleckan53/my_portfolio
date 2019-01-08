@@ -6,13 +6,35 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+    color: white;
+    background-color: #111111;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 /* navigation bar */
+.arrow {
+    visibility: hidden;
+    position: fixed;
+    bottom: 15%;
+}
+
 .navbar {
     /* background-color: aqua; */
     display: flex;
@@ -27,7 +49,8 @@ body {
 }
 
 .hamburger {
-    margin-right: 20px;
+    font-size: 2rem;
+    color: rgba(255,255,255, 0.5)
 }
 
 .navbar-mobile{
@@ -40,21 +63,22 @@ body {
 /* hero */
 
 .hero {
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
     line-height: 2;
 }
 
 .headshot {
-    margin-top: 20px;
-    width: 50%;
+    margin-top: 2rem;
+    width: 60%;
     border-radius: 50%;
+    margin-left: 20%;
 }
 
 
 /* sections */
 .container {
-    padding: 2rem 3rem;
+    padding: 3rem 3rem;
 }
 
 main .container:nth-child(even) {
@@ -94,12 +118,17 @@ footer {
 
 footer li {
     display: inline-block;
+    width: 30px;
+    margin: 0 1.5rem;
+    filter: invert(0.5) sepia(2) saturate(51) hue-rotate(175deg);
 }
+
+
 
 /* tablets */
 @media (min-width: 690px){
     .container {
-        padding: 2rem 5rem;
+        padding: 3rem 5rem;
     }
 
     .hero {
@@ -116,6 +145,7 @@ footer li {
         width: 60%;
     }
     .headshot {
+        margin-left: 0;
         width: 30%;
     }
 }
