@@ -4,20 +4,42 @@
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+::selection {
+    background: #009CD0;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     color: white;
-    background-color: #111111;
+    background-color: #23252B;
 }
 
-h1 {
+main, .hero, footer {
+    padding: 3rem;
+
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section:nth-child(1){
+    padding-top: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
     font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -28,43 +50,74 @@ h3 {
     font-size: 1.5rem;
 }
 
-/* navigation bar */
-.arrow {
+p {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+/* navbar */
+a:hover {
+    color: #009CD0;
+}
+
+.menu-toggle a {
+    display: block;
+}
+
+.menu-toggle li {
+    padding: 1rem 0;
+    text-transform: uppercase;    
+}
+
+.menu-toggle ul {
     visibility: hidden;
-    position: fixed;
-    bottom: 15%;
+    text-align: right;
+    background-color: #2a2e35;
+    max-height: 0;
+    opacity: 0;
+    padding: 5px 3rem;
+    box-shadow: 
+        inset 0px 11px 8px -10px #000,
+        inset 0px -11px 8px -10px #000; 
+    transition: 
+      max-height 0.25s ease-in,
+      opacity 0.15s ease-in,
+      visibility 0.5s ease-in;
 }
 
-.navbar {
-    /* background-color: aqua; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
+.menu-toggle input:checked ~ ul {
+    visibility: visible;
+    transition: 
+      max-height 0.25s ease-in,
+      opacity 0.5s ease-in;
+    max-height: 200px;
+    opacity: 1;
 }
 
-.logo {
-    visibility: hidden;
-    margin-left: 20px;
+input[type="checkbox"] {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 3rem 3rem 3rem auto;
+    content: url(assets/icons/bars-solid.svg);
+    filter: invert(1) saturate(0) opacity(0.3);
+    -webkit-appearance: button-bevel;
+    appearance: button-bevel;
 }
 
-.hamburger {
-    font-size: 2rem;
-    color: rgba(255,255,255, 0.5)
+input[type="checkbox"]:checked {
+    filter: invert(0.5) sepia(2) saturate(51) hue-rotate(175deg);
 }
-
-.navbar-mobile{
-    visibility: hidden;
-    position: fixed;
-
-}
+/*  */
 
 
 /* hero */
 
+
 .hero {
-    text-align: left;
-    padding-top: 20px;
     line-height: 2;
 }
 
@@ -73,63 +126,64 @@ h3 {
     width: 60%;
     border-radius: 50%;
     margin-left: 20%;
+    padding: 0 7%;
 }
 
+/*  */
 
 /* sections */
-.container {
-    padding: 3rem 3rem;
+
+.project {
+    padding: 4rem 0;
+
 }
 
-main .container:nth-child(even) {
-    text-align: right;
-}
-
-.project-screenshot {
+.project-img {
     width: 100%;
+    display: block;
+    padding-bottom: 2rem;
+
 }
 
-h2{
-    padding: 3rem 0;
+.project p {
+    padding: 1rem 0 1.5rem;
 }
 
-h3 {
-    padding: 2rem 0;
+.project-links a {
+    margin-right: 2rem;
 }
 
-.links {
-    margin-top: 2rem;
+.list-container {
+    padding-top: 4rem;
 }
 
-.links a:nth-child(2)::before {
-    content: "| "
+.contact-list li {
+    position: relative;
+    left: 50px;
 }
 
-/* footer */
+.contact-list {
+    line-height: 4rem;
+}
+
+.icon {
+    filter: invert(0.5) sepia(2) saturate(51) hue-rotate(175deg);
+    position: absolute;
+    left: -50px;
+    width: 30px;
+    top: 14px;
+}
 
 footer {
-    /* background-color: aquamarine; */
-    margin-top: 2rem;
-    padding: 2rem;
+    padding-top: 2rem;
     text-align: center;
-    line-height: 3;
-
 }
 
-footer li {
-    display: inline-block;
-    width: 30px;
-    margin: 0 1.5rem;
-    filter: invert(0.5) sepia(2) saturate(51) hue-rotate(175deg);
-}
-
-
+/*  */
 
 /* tablets */
-@media (min-width: 690px){
-    .container {
-        padding: 3rem 5rem;
-    }
+@media (min-width: 862px) {
+
 
     .hero {
         display: flex;
@@ -137,42 +191,121 @@ footer li {
         justify-content: space-between;
         padding-top: 10%;
         padding-bottom: 10%;
-
     }
 
     .hero-text {
         text-align: left;
         width: 60%;
     }
+
     .headshot {
         margin-left: 0;
         width: 30%;
-    }
-}
-
-
-/* laptop-desktop */
-@media (min-width: 1000px) {
-    .hamburger {
-        visibility: hidden;
+        padding: 0;
     }
 
-    .navbar-mobile {
-        visibility: visible;
-        position: static;
+    .project {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row-reverse;
     }
 
-    .navbar-mobile li {
+    .project-img {
         display: inline-block;
-        margin-left: 3rem;
-        text-transform: uppercase;
+        width: 50%;
+        height: 50%;
     }
 
-    .container {
-        margin: 0 10%;
+    .project-description {
+        display: inline-block;
+        width: 40%;
+        /* align-self: center; */
     }
 
-    .project-screenshot{
-        width: 70%;
+
+}
+
+@media (min-width: 960px) {
+    .menu-toggle ul {
+        visibility: visible;
+        max-height: 200px;
+        opacity: 1;
+        box-shadow: none;
+        background-color: #23252B;
+        padding: 2rem 3rem;
+
+    }
+
+
+    #contacts div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-list {
+        display: inline-block;
+    }
+
+    .contact-list li {
+        display: inline-block;              
+        margin-right: 70px;
+    }
+
+    input[type="checkbox"] {
+        visibility: hidden;
+        position: fixed;
+        
+    }
+    
+    .menu {
+        background-color: transparent;
+        visibility: visible;
+        padding: 2rem 4rem;
+        display: flex;
+        justify-content: flex-end;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    
+        
+    }
+
+    .menu a {
+        display: inline-block;
+        margin-left: 2rem;
+        
     }
 }
+
+@media (min-width: 1200px) {
+    main, .hero, footer {
+        padding: 3rem 10rem;
+    }
+
+    .menu-toggle ul {
+        padding: 2rem 10rem;
+    }
+
+    
+}
+
+@media (min-width: 1533px) {
+    .project-description {
+        align-self: center;
+    }
+
+    main, .hero, footer {
+        padding: 3rem 20rem;
+    }
+
+    .menu-toggle ul {
+        padding: 2rem 20rem;
+    }
+
+    .menu a {
+        margin-left: 4rem;
+    }
+
+
+}
+

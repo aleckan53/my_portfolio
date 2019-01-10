@@ -1,62 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Oleg Kan</title>
+    <title>Oleg_Kan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <script src="index.js"></script>
 </head>
+
 <body>
-    <nav class="navbar container" id="navbar">
-        <div class="logo">
-            <a href="">Oleg Kan</a>
-        </div>
-        <div class="hamburger">&#9776;</div>
-        <div class="navbar-mobile">
-            <ul>
-                <li><a href="#about-me">about me</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contacts">contacts</a></li>
+    <nav role="navigation" id="navbar">
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <ul class="menu">
+                <a href="https://docs.google.com/document/d/197yF1xB_71KZTOuGTANwRA4VNQ_WskUyDl-0dnYX0R0/edit?usp=sharing" target="blank">
+                    <li>Resume</li>
+                </a>
+                <a href="#portfolio">
+                    <li>Portfolio</li>
+                </a>
+                <a href="#contacts">
+                    <li>Contacts</li>
+                </a>
             </ul>
         </div>
-        <div class="arrow"><a href="#navbar">&#8679;</a></div>
     </nav>
-    <header class="container hero">
+    <header class="hero">
         <div class="hero-text">
-            <h1>Hi, my name is Oleg.</h1>
-            <p>I'm a passionate full stack web developer. I love creating interactive, user-intuitive and beautiful web-apps.</p>
+            <h1>Oleg Kan</h1>
+            <p>I'm a passionate full stack web developer. I love creating interactive, user-intuitive and beautiful
+                web-apps.</p>
         </div>
         <img class="headshot" src="assets/headshot-1.jpg" alt="Oleg Kan headshot">
     </header>
     <main>
-        <section class="container" id="portfolio">
+        <section id="portfolio">
             <h2>Portfolio</h2>
-            <div>
-                <img class="project-screenshot" src="assets/ezgif.com-crop.gif" alt="game of thrones quiz app">
-                <h3>Game of Thrones quiz app</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="links">
-                    <a href="" target="blank">Demo</a>
-                    <a href="https://github.com/olegakan/got-quiz-app-1" target="blanc">Repo</a>
+            <div class="project">
+                <img class="project-img" src="assets/got-img-tablet.jpg" alt="game of thrones quiz app">
+                <div class="project-description">
+                    <h3>Game_of_Thrones<br>quiz app</h3>
+                    <p>Referesh your knowlege about GoT with this beautiful quiz app build using vanila JavaScript.</p>
+                    <div class="project-links">
+                        <a href="https://olegakan.github.io/got-quiz-app-1/" target="blank">Demo</a>
+                        <a href="https://github.com/olegakan/got-quiz-app-1" target="blank">Repo</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="container" id="contacts">
-            <h2>Contact me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="mailto:olegakan5326@gmail.com">olegakan5326@gmail.com</a>
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <div class="list-container">
+                <ul class="contact-list">
+                    <a href="mailto:olegakan5326@gmail.com" target="blank">
+                        <li>
+                            <img class="icon" src="assets/icons/envelope-square-solid.svg" alt="email icon">
+                            olegakan5326@gmail.com
+                        </li>
+                    </a>
+                </ul>
+                <ul class="contact-list">
+                    <a href="https://github.com/olegakan" target="blank">
+                        <li>
+                            <img class="icon" src="assets/icons/github-square-brands.svg" alt="github icon">
+                            Github
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/oleg-kan-914917173/" target="blank">
+                        <li>
+                            <img class="icon" src="assets/icons/linkedin-brands.svg" alt="linkedin icon">
+                            Linkedin
+                        </li>
+                    </a>
+                </ul>
+
+            </div>
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href=""><img src="assets/icons/linkedin-brands.svg" alt="linkedin icon"></a></li>
-            <li><a href=""><img src="assets/icons/github-square-brands.svg" alt="github icon"></a></li>
-            <li><a href=""><img src="assets/icons/facebook-brands.svg" alt="facebook icon"></a></li>
-        </ul>
-        <p>© 2019 Oleg Kan </p>
+        © 2019 Oleg Kan
     </footer>
+<script src="index.js"></script>
 </body>
+
 </html>
