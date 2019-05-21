@@ -107,10 +107,10 @@ input[type="checkbox"] {
   margin: 3rem 3rem 1rem auto;
   content: url(assets/icons/bars-solid.svg);
   filter: invert(1) saturate(0) opacity(0.3);
-  -webkit-appearance: button-bevel;
+  cursor: pointer;
   -webkit-border: none;
   border: none;
-  cursor: pointer;
+  -webkit-appearance: button-bevel;
 }
 
 input[type="checkbox"]:checked {
@@ -176,12 +176,13 @@ input[type="checkbox"]:checked {
 
 .contact-list {
   line-height: 2.5rem;
+  width: 30%;
 }
 
 .contact-list a {
   display: flex;
   align-items: center;
-  margin: 2rem 0
+  margin: 2rem 0;
 }
 
 .icon {
@@ -197,11 +198,21 @@ footer {
   text-align: center;
 }
 
+.resume li {
+  margin: .5rem 0;
+}
+
+.resume ul {
+  margin-top: 2rem;
+}
+
+.resume a,
 .contacts a {
   color: rgba(255, 255, 255, 0.5);
   transition: all .6s ease;
 }
 
+.resume a:hover,
 .contacts a:hover {
   color: var(--main);
 }
@@ -258,6 +269,7 @@ footer {
     background-color: #23252B;
     padding: 2rem 3rem;
     height: auto;
+    margin: 0;
   }
 
   .contacts {
