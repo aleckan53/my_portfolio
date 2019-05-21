@@ -204,6 +204,10 @@ footer {
   color: var(--main);
 }
 
+.contacts h2 {
+  margin-bottom: 4rem;
+}
+
 @media (min-width: 862px) {
   .hero {
     display: flex;
