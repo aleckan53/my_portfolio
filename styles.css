@@ -108,6 +108,8 @@ input[type="checkbox"] {
   content: url(assets/icons/bars-solid.svg);
   filter: invert(1) saturate(0) opacity(0.3);
   -webkit-appearance: button-bevel;
+  -webkit-border: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -233,7 +235,6 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row-reverse;
-    margin: 10% 0;
   }
 
   .project-img {
