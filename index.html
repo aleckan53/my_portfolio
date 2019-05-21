@@ -2,107 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Oleg_Kan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Alec Kan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/fav.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav role="navigation" id="navbar">
-        <div class="menu-toggle">
-            <input type="checkbox">
-            <ul class="menu">
-                <li>
-                    <a href="https://docs.google.com/document/d/197yF1xB_71KZTOuGTANwRA4VNQ_WskUyDl-0dnYX0R0/edit?usp=sharing"
-                        target="blank">
-                        Resume
-                    </a>
-                </li>
-                <li>
-                    <a href="#portfolio">
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#contacts">
-                        Contacts
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header class="hero" role="banner">
-        <div class="hero-text">
-            <h1>Oleg Kan</h1>
-            <p>I'm a passionate full stack web developer. I love creating interactive, user-intuitive and beautiful
-                web-apps.</p>
-        </div>
-        <img class="headshot" src="assets/headshot-1.jpg" alt="Oleg Kan headshot">
-    </header>
-    <main role="main">
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="project">
-                <img class="project-img" src="assets/got-img-tablet.jpg" alt="game of thrones quiz app">
-                <div class="project-description">
-                    <h3>Game_of_Thrones<br>quiz app</h3>
-                    <p>Referesh your knowlege about GoT with this beautiful quiz app build using vanila JavaScript.</p>
-                    <div class="project-links">
-                        <a href="https://olegakan.github.io/got-quiz-app-1/" target="blank">Demo</a>
-                        <a href="https://github.com/olegakan/got-quiz-app-1" target="blank">Repo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-              <img class="project-img" src="assets/park-advisor.jpg" alt="park advisor app">
-              <div class="project-description">
-                  <h3>Park_Advisor<br>web app</h3>
-                  <p>Get unlimited information about all national parks in the US. Plan your trip - check entrance fees, weather, detailed directions.</p>
-                  <div class="project-links">
-                      <a href="https://olegakan.github.io/park-advisor/" target="blank">Demo</a>
-                      <a href="https://github.com/olegakan/park-advisor" target="blank">Repo</a>
-                  </div>
-              </div>
+  <nav role="navigation" id="navbar">
+    <div class="menu-toggle">
+      <input type="checkbox">
+      <ul class="menu">
+        <li>
+          <a href="https://docs.google.com/document/d/197yF1xB_71KZTOuGTANwRA4VNQ_WskUyDl-0dnYX0R0/edit?usp=sharing"
+            target="blank">
+            Resume
+          </a>
+        </li>
+        <li>
+          <a href="#portfolio">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#contacts">
+            Contacts
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="hero" role="banner">
+    <div class="hero-text">
+      <h1>Alec Kan</h1>
+      <p>I'm a passionate full stack web developer. I love creating interactive, user-intuitive and beautiful
+        web-apps.</p>
+    </div>
+    <div class="headshot"></div>
+  </header>
+  <main role="main">
+    <section id="portfolio">
+      <h2>Projects</h2>
+      <div class="project">
+        <img class="project-img" src="assets/bedtime.png" alt="park advisor app">
+        <div class="project-description">
+          <h3>Bedtime<br>kids stories app</h3>
+          <p>The app is a platform where users can read kids stories and publish their owns.</p>
+          <ul class="tech-stack">
+            <li>React</li>
+            <li>Node / Express</li>
+            <li>PostgreSQL</li>
+            <li>AWS S3</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://bedtime-app.olegakan5326.now.sh/#/" target="blank">Demo</a>
+            <a href="https://github.com/aleckan53/bedtime-client" target="blank">Client</a>
+            <a href="https://github.com/aleckan53/bedtime-server" target="blank">API</a>
           </div>
-
-        </section>
-        <section id="contacts">
-            <h2>Contacts</h2>
-            <div class="list-container">
-                <ul class="contact-list">
-                    <a href="mailto:olegakan5326@gmail.com" target="blank">
-                        <li>
-                            <img class="icon" src="assets/icons/envelope-square-solid.svg" alt="email icon">
-                            olegakan5326@gmail.com
-                        </li>
-                    </a>
-                </ul>
-                <ul class="contact-list">
-                    <a href="https://github.com/olegakan" target="blank">
-                        <li>
-                            <img class="icon" src="assets/icons/github-square-brands.svg" alt="github icon">
-                            Github
-                        </li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/oleg-kan-914917173/" target="blank">
-                        <li>
-                            <img class="icon" src="assets/icons/linkedin-brands.svg" alt="linkedin icon">
-                            Linkedin
-                        </li>
-                    </a>
-                </ul>
-
-            </div>
-        </section>
-    </main>
-    <footer>
-        © 2019 Oleg Kan
-    </footer>
-    <script src="index.js"></script>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project-img" src="assets/projects.png" alt="teamapp app">
+        <div class="project-description">
+          <h3>Teamapp<br>collab platform</h3>
+          <p>The app is designed to help users discover and work on projects they might be interested in. 
+            Users can also create their own projects and accept join requests in real time.</p>
+          <ul class="tech-stack">
+            <li>React</li>
+            <li>Node / Express</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://projects-app.olegakan5326.now.sh/" target="blank">Demo</a>
+            <a href="https://github.com/aleckan53/teamapp-client" target="blank">Client</a>
+            <a href="https://github.com/aleckan53/teamapp-server" target="blank">API</a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project-img" src="assets/park-advisor.jpg" alt="park advisor app">
+        <div class="project-description">
+          <h3>Park_Advisor<br>web app</h3>
+          <p>Get unlimited information about all national parks in the US. Plan your trip - check entrance fees,
+            weather, detailed directions.</p>
+          <ul class="tech-stack">
+            <li>HTML / CSS</li>
+            <li>JQuery</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://aleckan53.github.io/park-advisor/" target="blank">Demo</a>
+            <a href="https://github.com/aleckan53/park-advisor" target="blank">Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project-img" src="assets/got-img-tablet.jpg" alt="game of thrones quiz app">
+        <div class="project-description">
+          <h3>Game_of_Thrones<br>quiz app</h3>
+          <p>Referesh your knowlege about the greatest show ever (except the final season) with this beautiful quiz app.</p>
+          <ul class="tech-stack">
+            <li>HTML / CSS</li>
+            <li>JQuery</li>
+          </ul>  
+          <div class="project-links">
+            <a href="https://aleckan53.github.io/got-quiz-app-1/" target="blank">Demo</a>
+            <a href="https://github.com/aleckan53/got-quiz-app-1" target="blank">Repo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="resume">
+      <h2>Resume / CV</h2>
+      <ul>
+        <li>.rtf</li>
+        <li>.pdf</li>
+        <li>.doc</li>
+        <li>.jpg</li>
+      </ul>
+    </section> -->
+    <section id="contacts" class="contacts">
+      <h2>Contacts</h2>
+      <ul class="contact-list">
+        <a href="https://github.com/aleckan53" target="blank" class="link github">
+          <i class="fab fa-github-square"></i>
+          <li>Github</li>
+        </a>
+        <a href="https://www.linkedin.com/in/oleg-kan-914917173/" target="blank" class="link linkedin">
+          <i class="fab fa-linkedin"></i>
+          <li>Linkedin</li>
+        </a>
+      </ul>
+      <ul class="contact-list">
+        <a href="mailto:aleckan53@gmail.com" target="blank" class="link email">
+          <i class="fas fa-envelope-square"></i>
+          <li>aleckan53@gmail.com</li>
+        </a>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    © 2019 Alec Kan
+  </footer>
+  <script>
+    for(let i = 0; i<3; i++){
+      document.querySelectorAll('a')[i].addEventListener("click", function(){
+        document.querySelector('input').checked=false;
+      })
+    }
+  </script>
 </body>
 
 </html>
