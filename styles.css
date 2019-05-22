@@ -285,17 +285,7 @@ footer {
   .contacts ul {
     display: flex;
     justify-content: space-between;
-  }
-
-  .contacts ul a {
-  }
-
-  .contacts ul:nth-of-type(1) {
-    width: 40%
-  }
-  .contacts ul:nth-of-type(2) {
-    margin-right: 0;
-    margin-left: auto;
+    width: 100%;
   }
 
   input[type="checkbox"] {
@@ -357,10 +347,10 @@ footer {
   main,
   .hero,
   footer {
-    padding: 3rem 25rem;
+    padding: 3rem 25%;
   }
   .menu-toggle ul {
-    padding: 0 25rem 5rem;
+    padding: 2rem 25% 5rem;
   }
   .menu a {
     margin-left: 4rem;
