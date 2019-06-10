@@ -110,7 +110,7 @@ input[type="checkbox"] {
   cursor: pointer;
   -webkit-border: none;
   border: none;
-  -webkit-appearance: button-bevel;
+  -webkit-appearance: none;
 }
 
 input[type="checkbox"]:checked {
